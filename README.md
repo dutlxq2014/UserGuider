@@ -37,26 +37,26 @@ Example
 -------
 
 ```java
-        new DGuider.Builder()
-                .setAnchor(anchor)
-                .setBackground(0x4Cf00000)
-                .setGuideViewId(R.layout.guide_layout)
-                .setPosition(DGuider.LEFT_IN | DGuider.BOTTOM_OUT)
-                .disableAnim(true)
-                .build(Activity.this)
-                .show();
+    new DGuider.Builder()
+            .setAnchor(anchor)
+            .setBackground(0x4Cf00000)
+            .setGuideViewId(R.layout.guide_layout)
+            .setPosition(DGuider.LEFT_IN | DGuider.BOTTOM_OUT)
+            .disableAnim(true)
+            .build(Activity.this)
+            .show();
 ```
 
 ```java
-        DMultiGuider.Builder builder = new DMultiGuider.Builder();
-                builder.setAnchor(anchor1).setGuideViewId(R.layout.guide_layout)
-                        .setBackground(0x4C00f000)
-                        .setPosition(DMultiGuider.TOP_OUT| DMultiGuider.RIGHT_IN).buildItem();
-                builder.setAnchor(anchor2).setGuideViewId(R.layout.guide_layout)
-                        .setPosition(DMultiGuider.CENTER| DMultiGuider.CENTER).buildItem();
-                builder.setAnchor(anchor3).setGuideViewId(R.layout.guide_layout)
-                        .setPosition(DMultiGuider.RIGHT_IN| DMultiGuider.BOTTOM_IN).buildItem();
-                builder.build(Activity.this).show();
+    DMultiGuider.Builder builder = new DMultiGuider.Builder();
+            builder.setAnchor(anchor1).setGuideViewId(R.layout.guide_layout)
+                    .setBackground(0x4C00f000)
+                    .setPosition(DMultiGuider.TOP_OUT| DMultiGuider.RIGHT_IN).buildItem();
+            builder.setAnchor(anchor2).setGuideViewId(R.layout.guide_layout)
+                    .setPosition(DMultiGuider.CENTER| DMultiGuider.CENTER).buildItem();
+            builder.setAnchor(anchor3).setGuideViewId(R.layout.guide_layout)
+                    .setPosition(DMultiGuider.RIGHT_IN| DMultiGuider.BOTTOM_IN).buildItem();
+            builder.build(Activity.this).show();
 ```
 
 License
