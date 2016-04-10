@@ -32,6 +32,11 @@ Overview
                           BOTTOM_OUT
 ```
 
+[DGuider!]()
+[VGuider!]()
+[DMultiGuider!]()
+[VMultiGuider!]()
+
 
 Example
 -------
@@ -49,14 +54,14 @@ Example
 
 ```java
     DMultiGuider.Builder builder = new DMultiGuider.Builder();
-            builder.setAnchor(anchor1).setGuideViewId(R.layout.guide_layout)
-                    .setBackground(0x4C00f000)
-                    .setPosition(DMultiGuider.TOP_OUT| DMultiGuider.RIGHT_IN).buildItem();
-            builder.setAnchor(anchor2).setGuideViewId(R.layout.guide_layout)
-                    .setPosition(DMultiGuider.CENTER| DMultiGuider.CENTER).buildItem();
-            builder.setAnchor(anchor3).setGuideViewId(R.layout.guide_layout)
-                    .setPosition(DMultiGuider.RIGHT_IN| DMultiGuider.BOTTOM_IN).buildItem();
-            builder.build(Activity.this).show();
+    builder.setAnchor(anchor1).setGuideViewId(R.layout.guide_layout)
+            .setBackground(0x4C00f000)
+            .setPosition(DMultiGuider.TOP_OUT| DMultiGuider.RIGHT_IN).buildItem();
+    builder.setAnchor(anchor2).setGuideViewId(R.layout.guide_layout)
+            .setPosition(DMultiGuider.CENTER| DMultiGuider.CENTER).buildItem();
+    builder.setAnchor(anchor3).setGuideViewId(R.layout.guide_layout)
+            .setPosition(DMultiGuider.RIGHT_IN| DMultiGuider.BOTTOM_IN).buildItem();
+    builder.build(Activity.this).show();
 ```
 
 License
