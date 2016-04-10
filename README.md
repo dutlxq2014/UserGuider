@@ -5,7 +5,7 @@ UserGuider
 
 
 Overview
-========
+--------
 
     UserGuider provides four kinds of implementation for your introduction. 
     1. DGuider / VGuider provides a single guide view in the window each time.
@@ -15,13 +15,13 @@ Overview
 
     There are several properties you can provide to customize the introduction.
     1. GuideView / GuideViewId: A view or resource id holding the introduction information.
-    1. Anchor: The area you want to put you guide tips around. if not provided, guide tips will be located in the screen center.
+    1. Anchor: The area you want to put you guide tips around. if not provided, 
+       guide tips will be located in the screen center.
     2. Position: The position to locate the guide view relative to anchor. 25 candidates available.
     3. BackgroundColor / DisableAnim / Delay: Properties to customize the window.
 
 ```java
-                          TOP_OUT
-            |---------------------------------|
+            ______________TOP_OUT______________
             |             TOP_IN              |
             |                                 |
             |                                 |
@@ -34,7 +34,7 @@ Overview
 
 
 Example
-=======
+-------
 
 ```java
         new DGuider.Builder()
