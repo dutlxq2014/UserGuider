@@ -4,6 +4,7 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/UserGuider.iml" filepath="$PROJECT_DIR$/UserGuider.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/glibrary/glibrary.iml" filepath="$PROJECT_DIR$/glibrary/glibrary.iml" />
     </modules>
   </component>
 </project>
