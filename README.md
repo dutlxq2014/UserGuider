@@ -32,33 +32,65 @@ Overview
                           BOTTOM_OUT
 ```
 
-![UserGuider](docrepo/guide_example.png)guide_example.png
-
-
 Example
 -------
+
+The following image shows some demo snapshots.
+
+![UserGuider](docrepo/guide_example.png)
+
+
+1. DGuider
 
 ```java
     new DGuider.Builder()
             .setAnchor(anchor)
-            .setBackground(0x4Cf00000)
+            .setBackground(0x7fff0000)
             .setGuideViewId(R.layout.guide_layout)
-            .setPosition(DGuider.LEFT_IN | DGuider.BOTTOM_OUT)
+            .setPosition(DGuider.CENTER | DGuider.TOP_OUT)
             .disableAnim(true)
             .build(Activity.this)
             .show();
 ```
 
+2. VGuider
+
+```
+    new VGuider.Builder()
+            .setAnchor(anchor)
+            .setBackground(0x7f00ff00)
+            .setGuideViewId(R.layout.guide_layout)
+            .setPosition(DGuider.CENTER | DGuider.BOTTOM_IN)
+            .disableAnim(true)
+            .build(Activity.this)
+            .show();
+```
+
+3. DMultiGuider
+
 ```java
+
     DMultiGuider.Builder builder = new DMultiGuider.Builder();
-    builder.setAnchor(anchor1).setGuideViewId(R.layout.guide_layout)
-            .setBackground(0x4C00f000)
-            .setPosition(DMultiGuider.TOP_OUT| DMultiGuider.RIGHT_IN).buildItem();
-    builder.setAnchor(anchor2).setGuideViewId(R.layout.guide_layout)
-            .setPosition(DMultiGuider.CENTER| DMultiGuider.CENTER).buildItem();
-    builder.setAnchor(anchor3).setGuideViewId(R.layout.guide_layout)
-            .setPosition(DMultiGuider.RIGHT_IN| DMultiGuider.BOTTOM_IN).buildItem();
-    builder.build(Activity.this).show();
+            builder.setAnchor(anchorView).setGuideViewId(R.layout.guider_view_layout)
+                    .setBackground(0x7f000000)
+                    .setPosition(DGuider.LEFT_OUT| DGuider.CENTER).buildItem();
+            builder.setAnchor(anchorView).setGuideViewId(R.layout.guider_view_layout)
+                    .setPosition(DGuider.CENTER | DGuider.CENTER).buildItem();
+            builder.setAnchor(anchorView).setGuideViewId(R.layout.guider_view_layout)
+                    .setPosition(DGuider.RIGHT_OUT | DGuider.CENTER).buildItem();
+            builder.build(getContext()).show();
+```
+
+4. VMultiGuider
+
+```java
+    VMultiGuider.Builder builder = new VMultiGuider.Builder();
+            builder.setAnchor(anchorView).setGuideViewId(R.layout.guider_view_layout)
+                    .setBackground(0x7fff00ff)
+                    .setPosition(DGuider.RIGHT_IN | DGuider.BOTTOM_OUT).buildItem();
+            builder.setAnchor(anchorView).setGuideViewId(R.layout.guider_view_layout)
+                    .setPosition(DGuider.CENTER | DGuider.CENTER).buildItem();
+            builder.build(getContext()).show();
 ```
 
 License
