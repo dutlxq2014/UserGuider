@@ -40,7 +40,7 @@ The following image shows some demo snapshots.
 ![UserGuider](docrepo/guide_example.png)
 
 
-1. DGuider
+1.DGuider
 
 ```java
     new DGuider.Builder()
@@ -53,7 +53,7 @@ The following image shows some demo snapshots.
             .show();
 ```
 
-2. VGuider
+2.VGuider
 
 ```
     new VGuider.Builder()
@@ -66,7 +66,7 @@ The following image shows some demo snapshots.
             .show();
 ```
 
-3. DMultiGuider
+3.DMultiGuider
 
 ```java
 
@@ -81,7 +81,7 @@ The following image shows some demo snapshots.
             builder.build(getContext()).show();
 ```
 
-4. VMultiGuider
+4.VMultiGuider
 
 ```java
     VMultiGuider.Builder builder = new VMultiGuider.Builder();
