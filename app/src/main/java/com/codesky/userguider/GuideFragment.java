@@ -25,10 +25,8 @@ public class GuideFragment extends Fragment {
 
     }
 
-    public void findView(View root) {
-        if (guideDot != null) {
-            return;
-        }
+    public void initFindView(View root) {
+
         anchorView = root.findViewById(R.id.anchor_square);
         guideDot = new View[5][];
         for (int i = 0; i < guideDot.length; ++i) {

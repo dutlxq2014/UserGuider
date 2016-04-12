@@ -1,13 +1,13 @@
 UserGuider
 ==========
 
-    UserGuider is a tool to introduce user to your newly developed product on you mobile application.
+    UserGuider is a tool to introduce user to your newly developed product on you mobile application for android.
 
 
 Overview
 --------
 
-    UserGuider provides four kinds of implementation for your introduction. 
+    UserGuider provides four kinds of implementation for the introduction. 
     1. DGuider / VGuider provides a single guide view in the window each time.
     2. DMultiGuider / VMultiGuider can provides multi guide view each time.
     Prefix D implies Dialog implementation, and V for DecorView implementation.
@@ -32,10 +32,7 @@ Overview
                           BOTTOM_OUT
 ```
 
-[DGuider!]()
-[VGuider!]()
-[DMultiGuider!]()
-[VMultiGuider!]()
+[!UserGuider](https://github.com/dutlxq2014/docrepo/guide_example.png)
 
 
 Example

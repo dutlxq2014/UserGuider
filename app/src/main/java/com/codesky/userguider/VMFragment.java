@@ -26,7 +26,7 @@ public class VMFragment extends GuideFragment {
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
 
         View root = inflater.inflate(R.layout.guider_panel_layout, container, false);
-        findView(root);
+        initFindView(root);
         initClickAction();
         return root;
     }
