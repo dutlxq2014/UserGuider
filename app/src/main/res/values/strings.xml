@@ -1,3 +1,9 @@
 <resources>
     <string name="app_name">UserGuider</string>
+
+    <string name="dialog_guide_title">1. Dialog Guider</string>
+    <string name="view_guide_title">2. View Guider</string>
+    <string name="dialog_multi_guide_title">3. Dialog Multi Guider</string>
+    <string name="view_multi_guide_title">4. View Multi Guider</string>
+
 </resources>

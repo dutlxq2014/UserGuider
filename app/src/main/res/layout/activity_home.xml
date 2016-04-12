@@ -3,15 +3,20 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:paddingBottom="@dimen/activity_vertical_margin"
-    android:paddingLeft="@dimen/activity_horizontal_margin"
-    android:paddingRight="@dimen/activity_horizontal_margin"
-    android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="com.codesky.userguider.HomeActivity">
 
-    <TextView
-        android:id="@+id/hello_world"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!" />
+    <android.support.v4.view.ViewPager
+        android:id="@+id/guider_pager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <android.support.v4.view.PagerTitleStrip
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/titlestrip_height"
+            android:layout_gravity="top"
+            android:background="@color/titlestrip_background_color"
+            android:gravity="center_vertical"
+            android:textSize="@dimen/titlestrip_text_size"
+            android:textColor="@color/titlestrip_text_color"/>
+    </android.support.v4.view.ViewPager>
+
 </RelativeLayout>

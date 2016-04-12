@@ -3,4 +3,14 @@
     <color name="colorPrimary">#3F51B5</color>
     <color name="colorPrimaryDark">#303F9F</color>
     <color name="colorAccent">#FF4081</color>
+
+    <color name="titlestrip_background_color">#DEDEDE</color>
+    <color name="titlestrip_text_color">#666666</color>
+
+    <color name="color_guide_row_0">#3fff0000</color>
+    <color name="color_guide_row_1">#3FF5A903</color>
+    <color name="color_guide_row_2">#3f000000</color>
+    <color name="color_guide_row_3">#3f00ff00</color>
+    <color name="color_guide_row_4">#3fff00ff</color>
+
 </resources>

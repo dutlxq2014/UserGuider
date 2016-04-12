@@ -1,0 +1,273 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <FrameLayout
+        android:id="@+id/anchor_square"
+        android:layout_width="220dp"
+        android:layout_height="220dp"
+        android:layout_centerInParent="true"
+        android:background="@drawable/square_shape">
+    </FrameLayout>
+    <View
+        android:id="@+id/left"
+        android:layout_width="1px"
+        android:layout_height="match_parent"
+        android:layout_toLeftOf="@id/anchor_square"
+        android:layout_alignTop="@id/anchor_square"
+        android:layout_alignBottom="@id/anchor_square"/>
+    <View
+        android:id="@+id/top"
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_alignLeft="@id/anchor_square"
+        android:layout_alignRight="@id/anchor_square"
+        android:layout_above="@id/anchor_square"/>
+    <View
+        android:id="@+id/right"
+        android:layout_width="1px"
+        android:layout_height="match_parent"
+        android:layout_toRightOf="@id/anchor_square"
+        android:layout_alignTop="@id/anchor_square"
+        android:layout_alignBottom="@id/anchor_square"/>
+    <View
+        android:id="@+id/bottom"
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_alignLeft="@id/anchor_square"
+        android:layout_alignRight="@id/anchor_square"
+        android:layout_below="@id/anchor_square"/>
+
+    <!--row top out-->
+    <ImageView
+        android:id="@+id/left_out_top_out"
+        android:layout_width="@dimen/click_dot_size"
+        android:layout_height="@dimen/click_dot_size"
+        android:padding="@dimen/click_dot_padding"
+        android:layout_toLeftOf="@id/left"
+        android:layout_above="@id/top"
+        android:src="@drawable/red"/>
+
+    <ImageView
+        android:id="@+id/left_in_top_out"
+        android:layout_width="@dimen/click_dot_size"
+        android:layout_height="@dimen/click_dot_size"
+        android:padding="@dimen/click_dot_padding"
+        android:layout_toRightOf="@id/left"
+        android:layout_above="@id/top"
+        android:src="@drawable/red"/>
+
+    <ImageView
+        android:id="@+id/center_top_out"
+        android:layout_width="@dimen/click_dot_size"
+        android:layout_height="@dimen/click_dot_size"
+        android:padding="@dimen/click_dot_padding"
+        android:layout_centerHorizontal="true"
+        android:layout_above="@id/top"
+        android:src="@drawable/red"/>
+
+    <ImageView
+        android:id="@+id/right_in_top_out"
+        android:layout_width="@dimen/click_dot_size"
+        android:layout_height="@dimen/click_dot_size"
+        android:padding="@dimen/click_dot_padding"
+        android:layout_toLeftOf="@id/right"
+        android:layout_above="@id/top"
+        android:src="@drawable/red"/>
+
+    <ImageView
+        android:id="@+id/right_out_top_out"
+        android:layout_width="@dimen/click_dot_size"
+        android:layout_height="@dimen/click_dot_size"
+        android:padding="@dimen/click_dot_padding"
+        android:layout_toRightOf="@id/right"
+        android:layout_above="@id/top"
+        android:src="@drawable/red"/>
+
+    <!--row top in-->
+    <ImageView
+        android:id="@+id/left_out_top_in"
+        android:layout_width="@dimen/click_dot_size"
+        android:layout_height="@dimen/click_dot_size"
+        android:padding="@dimen/click_dot_padding"
+        android:layout_toLeftOf="@id/left"
+        android:layout_below="@id/top"
+        android:src="@drawable/orange"/>
+
+    <ImageView
+        android:id="@+id/left_in_top_in"
+        android:layout_width="@dimen/click_dot_size"
+        android:layout_height="@dimen/click_dot_size"
+        android:padding="@dimen/click_dot_padding"
+        android:layout_toRightOf="@id/left"
+        android:layout_below="@id/top"
+        android:src="@drawable/orange"/>
+
+    <ImageView
+        android:id="@+id/center_top_in"
+        android:layout_width="@dimen/click_dot_size"
+        android:layout_height="@dimen/click_dot_size"
+        android:padding="@dimen/click_dot_padding"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/top"
+        android:src="@drawable/orange"/>
+
+    <ImageView
+        android:id="@+id/right_in_top_in"
+        android:layout_width="@dimen/click_dot_size"
+        android:layout_height="@dimen/click_dot_size"
+        android:padding="@dimen/click_dot_padding"
+        android:layout_toLeftOf="@id/right"
+        android:layout_below="@id/top"
+        android:src="@drawable/orange"/>
+
+    <ImageView
+        android:id="@+id/right_out_top_in"
+        android:layout_width="@dimen/click_dot_size"
+        android:layout_height="@dimen/click_dot_size"
+        android:padding="@dimen/click_dot_padding"
+        android:layout_toRightOf="@id/right"
+        android:layout_below="@id/top"
+        android:src="@drawable/orange"/>
+
+    <!--row center-->
+    <ImageView
+        android:id="@+id/left_out_center"
+        android:layout_width="@dimen/click_dot_size"
+        android:layout_height="@dimen/click_dot_size"
+        android:padding="@dimen/click_dot_padding"
+        android:layout_toLeftOf="@id/left"
+        android:layout_centerVertical="true"
+        android:src="@drawable/yellow"/>
+
+    <ImageView
+        android:id="@+id/left_in_center"
+        android:layout_width="@dimen/click_dot_size"
+        android:layout_height="@dimen/click_dot_size"
+        android:padding="@dimen/click_dot_padding"
+        android:layout_toRightOf="@id/left"
+        android:layout_centerVertical="true"
+        android:src="@drawable/yellow"/>
+
+    <ImageView
+        android:id="@+id/center_center"
+        android:layout_width="@dimen/click_dot_size"
+        android:layout_height="@dimen/click_dot_size"
+        android:padding="@dimen/click_dot_padding"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:src="@drawable/yellow"/>
+
+    <ImageView
+        android:id="@+id/right_in_center"
+        android:layout_width="@dimen/click_dot_size"
+        android:layout_height="@dimen/click_dot_size"
+        android:padding="@dimen/click_dot_padding"
+        android:layout_toLeftOf="@id/right"
+        android:layout_centerVertical="true"
+        android:src="@drawable/yellow"/>
+
+    <ImageView
+        android:id="@+id/right_out_center"
+        android:layout_width="@dimen/click_dot_size"
+        android:layout_height="@dimen/click_dot_size"
+        android:padding="@dimen/click_dot_padding"
+        android:layout_toRightOf="@id/right"
+        android:layout_centerVertical="true"
+        android:src="@drawable/yellow"/>
+
+    <!--row bottom in-->
+    <ImageView
+        android:id="@+id/left_out_bottom_in"
+        android:layout_width="@dimen/click_dot_size"
+        android:layout_height="@dimen/click_dot_size"
+        android:padding="@dimen/click_dot_padding"
+        android:layout_toLeftOf="@id/left"
+        android:layout_above="@id/bottom"
+        android:src="@drawable/green"/>
+
+    <ImageView
+        android:id="@+id/left_in_bottom_in"
+        android:layout_width="@dimen/click_dot_size"
+        android:layout_height="@dimen/click_dot_size"
+        android:padding="@dimen/click_dot_padding"
+        android:layout_toRightOf="@id/left"
+        android:layout_above="@id/bottom"
+        android:src="@drawable/green"/>
+
+    <ImageView
+        android:id="@+id/center_bottom_in"
+        android:layout_width="@dimen/click_dot_size"
+        android:layout_height="@dimen/click_dot_size"
+        android:padding="@dimen/click_dot_padding"
+        android:layout_centerHorizontal="true"
+        android:layout_above="@id/bottom"
+        android:src="@drawable/green"/>
+
+    <ImageView
+        android:id="@+id/right_in_bottom_in"
+        android:layout_width="@dimen/click_dot_size"
+        android:layout_height="@dimen/click_dot_size"
+        android:padding="@dimen/click_dot_padding"
+        android:layout_toLeftOf="@id/right"
+        android:layout_above="@id/bottom"
+        android:src="@drawable/green"/>
+
+    <ImageView
+        android:id="@+id/right_out_bottom_in"
+        android:layout_width="@dimen/click_dot_size"
+        android:layout_height="@dimen/click_dot_size"
+        android:padding="@dimen/click_dot_padding"
+        android:layout_toRightOf="@id/right"
+        android:layout_above="@id/bottom"
+        android:src="@drawable/green"/>
+
+    <!--row bottom out-->
+    <ImageView
+        android:id="@+id/left_out_bottom_out"
+        android:layout_width="@dimen/click_dot_size"
+        android:layout_height="@dimen/click_dot_size"
+        android:padding="@dimen/click_dot_padding"
+        android:layout_toLeftOf="@id/left"
+        android:layout_below="@id/bottom"
+        android:src="@drawable/purple"/>
+
+    <ImageView
+        android:id="@+id/left_in_bottom_out"
+        android:layout_width="@dimen/click_dot_size"
+        android:layout_height="@dimen/click_dot_size"
+        android:padding="@dimen/click_dot_padding"
+        android:layout_toRightOf="@id/left"
+        android:layout_below="@id/bottom"
+        android:src="@drawable/purple"/>
+
+    <ImageView
+        android:id="@+id/center_bottom_out"
+        android:layout_width="@dimen/click_dot_size"
+        android:layout_height="@dimen/click_dot_size"
+        android:padding="@dimen/click_dot_padding"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/bottom"
+        android:src="@drawable/purple"/>
+
+    <ImageView
+        android:id="@+id/right_in_bottom_out"
+        android:layout_width="@dimen/click_dot_size"
+        android:layout_height="@dimen/click_dot_size"
+        android:padding="@dimen/click_dot_padding"
+        android:layout_toLeftOf="@id/right"
+        android:layout_below="@id/bottom"
+        android:src="@drawable/purple"/>
+
+    <ImageView
+        android:id="@+id/right_out_bottom_out"
+        android:layout_width="@dimen/click_dot_size"
+        android:layout_height="@dimen/click_dot_size"
+        android:padding="@dimen/click_dot_padding"
+        android:layout_toRightOf="@id/right"
+        android:layout_below="@id/bottom"
+        android:src="@drawable/purple"/>
+
+</RelativeLayout>
