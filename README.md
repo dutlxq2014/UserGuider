@@ -35,7 +35,8 @@ Overview
 Example
 -------
 
-The following image shows some demo snapshots.
+The following image shows some demo snapshots. 25 candidates are show in different color for each row.
+Click the round dots to trigger Athena appear.
 
 ![UserGuider](docrepo/guide_example.png)
 
@@ -49,7 +50,7 @@ The following image shows some demo snapshots.
             .setGuideViewId(R.layout.guide_layout)
             .setPosition(DGuider.CENTER | DGuider.TOP_OUT)
             .disableAnim(true)
-            .build(Activity.this)
+            .build(getContext())
             .show();
 ```
 
@@ -62,7 +63,7 @@ The following image shows some demo snapshots.
             .setGuideViewId(R.layout.guide_layout)
             .setPosition(DGuider.CENTER | DGuider.BOTTOM_IN)
             .disableAnim(true)
-            .build(Activity.this)
+            .build(getContext())
             .show();
 ```
 
