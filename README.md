@@ -32,7 +32,7 @@ Overview
                           BOTTOM_OUT
 ```
 
-[!UserGuider](https://github.com/dutlxq2014/docrepo/guide_example.png)
+[!UserGuider](/docrepo/guide_example.png)
 
 
 Example
